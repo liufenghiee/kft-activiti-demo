@@ -556,7 +556,7 @@
 								<taskdef name="dbunit" classname="org.dbunit.ant.DbUnitTask" classpathref="maven.test.classpath" />
 								<!-- base -->
 								<sql driver="${jdbc.driver}" url="${jdbc.url}" userid="${jdbc.username}" password="${jdbc.password}"
-									src="src/main/resources/sql/${sql.type}/schema.sql" onerror="continue">
+									src="src/main/resources/sql/${sql.type}/schema.sql" onerror="continue" encoding="UTF-8">
 									<classpath refid="maven.test.classpath" />
 								</sql>
 
@@ -595,38 +595,38 @@
 								<taskdef name="dbunit" classname="org.dbunit.ant.DbUnitTask" classpathref="maven.test.classpath" />
 								<!-- base -->
 								<sql driver="${jdbc.driver}" url="${jdbc.url}" userid="${jdbc.username}" password="${jdbc.password}"
-									src="src/main/resources/sql/${sql.type}/schema.sql" onerror="continue">
+									src="src/main/resources/sql/${sql.type}/schema.sql" onerror="continue" encoding="UTF-8">
 									<classpath refid="maven.test.classpath" />
 								</sql>
 
 								<!-- activit start -->
 								<sql driver="${jdbc.driver}" url="${jdbc.url}" userid="${jdbc.username}" password="${jdbc.password}"
-									src="src/main/resources/sql/${sql.type}/drop/activiti.${sql.type}.drop.engine.sql" onerror="continue">
+									src="src/main/resources/sql/${sql.type}/drop/activiti.${sql.type}.drop.engine.sql" onerror="continue" encoding="UTF-8">
 									<classpath refid="maven.test.classpath" />
 								</sql>
 
 								<sql driver="${jdbc.driver}" url="${jdbc.url}" userid="${jdbc.username}" password="${jdbc.password}"
-									src="src/main/resources/sql/${sql.type}/drop/activiti.${sql.type}.drop.history.sql" onerror="continue">
+									src="src/main/resources/sql/${sql.type}/drop/activiti.${sql.type}.drop.history.sql" onerror="continue" encoding="UTF-8">
 									<classpath refid="maven.test.classpath" />
 								</sql>
 
 								<sql driver="${jdbc.driver}" url="${jdbc.url}" userid="${jdbc.username}" password="${jdbc.password}"
-									src="src/main/resources/sql/${sql.type}/drop/activiti.${sql.type}.drop.identity.sql" onerror="continue">
+									src="src/main/resources/sql/${sql.type}/drop/activiti.${sql.type}.drop.identity.sql" onerror="continue" encoding="UTF-8">
 									<classpath refid="maven.test.classpath" />
 								</sql>
 
 								<sql driver="${jdbc.driver}" url="${jdbc.url}" userid="${jdbc.username}" password="${jdbc.password}"
-									src="src/main/resources/sql/${sql.type}/create/activiti.${sql.type}.create.engine.sql" onerror="continue">
+									src="src/main/resources/sql/${sql.type}/create/activiti.${sql.type}.create.engine.sql" onerror="continue" encoding="UTF-8">
 									<classpath refid="maven.test.classpath" />
 								</sql>
 
 								<sql driver="${jdbc.driver}" url="${jdbc.url}" userid="${jdbc.username}" password="${jdbc.password}"
-									src="src/main/resources/sql/${sql.type}/create/activiti.${sql.type}.create.history.sql" onerror="continue">
+									src="src/main/resources/sql/${sql.type}/create/activiti.${sql.type}.create.history.sql" onerror="continue" encoding="UTF-8">
 									<classpath refid="maven.test.classpath" />
 								</sql>
 
 								<sql driver="${jdbc.driver}" url="${jdbc.url}" userid="${jdbc.username}" password="${jdbc.password}"
-									src="src/main/resources/sql/${sql.type}/create/activiti.${sql.type}.create.identity.sql" onerror="continue">
+									src="src/main/resources/sql/${sql.type}/create/activiti.${sql.type}.create.identity.sql" onerror="continue" encoding="UTF-8">
 									<classpath refid="maven.test.classpath" />
 								</sql>
 								<!-- activit end -->
